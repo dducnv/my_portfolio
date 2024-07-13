@@ -181,7 +181,7 @@ export default function Home() {
 
         </div>
       </section>
-      <section className="px-5 md:px-16 py-5 border-b-2 border-b-black dark:border-b-white pb-20 ">
+      <section className=" border-b-2 border-b-black dark:border-b-white pb-20 ">
         <div
           title="Code time"
           className="mt-10 max-w-7xl  overflow-x-auto">
