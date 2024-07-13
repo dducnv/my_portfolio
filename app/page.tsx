@@ -184,7 +184,7 @@ export default function Home() {
       <section className=" border-b-2 border-b-black dark:border-b-white pb-20 ">
         <div
           title="Code time"
-          className="mt-10 max-w-7xl  overflow-x-auto">
+          className="mt-10 w-full overflow-x-auto">
           <figure
             className="w-full m-auto flex justify-center dark:hidden"
           >
