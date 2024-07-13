@@ -137,7 +137,7 @@ export default function Home() {
       <section className="flex justify-center items-center py-32 border-b-2 border-b-black dark:border-b-white">
         <div className="flex flex-col items-center">
 
-          <div className=" w-24 h-24 md:h-44 md:w-44 relative rounded-full overflow-hidden">
+          <div className=" w-32 h-32 md:h-44 md:w-44 relative rounded-full overflow-hidden">
             <Image
               src="/avatar.jpg"
               className=" object-contain"
@@ -145,7 +145,7 @@ export default function Home() {
               fill
             />
           </div>
-          <h1 className="text-2xl md:text-4xl mt-5 be-vietnam-pro font-bold">Duc Nguyen Van</h1>
+          <h1 className="text-3xl md:text-4xl mt-5 be-vietnam-pro font-bold">Duc Nguyen Van</h1>
           <p className="text-sm md:text-lg mt-2 ibm-mono-font">Mobile App Developer</p>
           <div className="flex flex-wrap space-x-4 item-center mt-10">
             {
