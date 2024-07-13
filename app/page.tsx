@@ -181,7 +181,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className=" md:flex  border-b-2 border-b-black dark:border-b-white">
+      <section className=" md:flex ">
         <div className="md:w-1/3">
           <Card>
             <Link
