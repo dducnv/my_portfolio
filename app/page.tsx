@@ -4,10 +4,9 @@ import Particles from "@/components/particles";
 import Image from "next/image";
 import Link from "next/link";
 import { DiDart } from "react-icons/di";
-import { FaDiscord, FaFacebookF, FaFigma, FaGithub, FaGooglePlay, FaInstagram, FaJava, FaLinkedinIn, FaSkype, FaTelegramPlane } from "react-icons/fa";
-import { FaGoogleScholar, FaTelegram } from "react-icons/fa6";
+import { FaDiscord, FaFacebookF, FaFigma, FaGitAlt, FaGithub, FaGitlab, FaGooglePlay, FaInstagram, FaJava, FaLinkedinIn, FaSkype, FaSourcetree, FaTelegramPlane } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiCocos, SiDart, SiFlutter, SiKotlin, SiTypescript } from "react-icons/si";
+import { SiCocos, SiDart, SiFlutter, SiKotlin, SiSqlite, SiTypescript } from "react-icons/si";
 
 
 
@@ -109,6 +108,36 @@ const skills = [
     iconLink: "",
   },
   {
+    id:9,
+    name:"SQLite",
+    icon:SiSqlite,
+    iconLink:"",
+  },
+  {
+    id:9,
+    name:"Git",
+    icon:FaGitAlt,
+    iconLink:"",
+  },
+  {
+    id:10,
+    name:"GitHub",
+    icon:FaGithub,
+    iconLink:"",
+  },
+  {
+    id:11,
+    name:"GitLab",
+    icon:FaGitlab,
+    iconLink:"",
+  },
+  {
+    id:11,
+    name:"Sourcetree",
+    icon:FaSourcetree,
+    iconLink:"",
+  },
+  {
     id: 6,
     name: "Cocos Creator",
     icon: SiCocos,
@@ -168,13 +197,13 @@ export default function Home() {
           </div>
           <h1 className="text-3xl md:text-4xl mt-5 be-vietnam-pro font-bold">Duc Nguyen Van</h1>
           <p className="text-sm md:text-lg mt-2 ibm-mono-font">Mobile App Developer</p>
-          <div className="flex flex-wrap space-x-4 item-center mt-10">
+          <div className="flex flex-wrap space-x-4  gap-3 md:gap-0  item-center mt-10 justify-center px-16">
             {
               skills?.map((item) => (
                 <item.icon
                   title={item.name}
                   key={item.id}
-                  className="w-6 h-6 md:w-8 md:h-8 " />
+                  className="w-4 h-4 md:w-8 md:h-8 " />
               ))
             }
           </div>
@@ -199,7 +228,7 @@ export default function Home() {
       </section>
       <section className="px-5 md:px-16 md:flex justify-between w-full items-center py-5 border-b-2 border-b-black dark:border-b-white ">
         <h3 className="mb-5 md:mb-0">Reach to me:</h3>
-        <div className="flex flex-wrap space-x-4">
+        <div className="flex flex-wrap  gap-4">
           {socialNetwork?.map((item) => (
             <Link
               target={"_blank"}
@@ -208,7 +237,7 @@ export default function Home() {
               key={item.id}
               href={item.url}
             >
-              <item.icon className="w-4 h-4 md:w-6 md:h-6" />
+              <item.icon className="w-6 h-6 md:w-6 md:h-6" />
             </Link>
           ))}
         </div>
