@@ -129,7 +129,7 @@ const skills = [
 export default function Home() {
   return (
     <main className="min-h-screen w-full">
-      <nav className="flex px-16 py-5 border-b-2 border-b-black dark:border-b-white">
+      <nav className="flex px-5 md:px-16 py-5 border-b-2 border-b-black dark:border-b-white">
         <Link href={"/"} className="ibm-mono-font font-semibold">
           dducnv.dev
         </Link>
@@ -175,7 +175,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="  md:flex  border-b-2 border-b-black dark:border-b-white">
+      <section className=" md:flex  border-b-2 border-b-black dark:border-b-white">
         <div className="md:w-1/3 py-20 flex justify-center items-center">
           <Link
             target={"_blank"}
