@@ -128,9 +128,25 @@ const skills = [
   },
 ]
 
+const spotifyListLink = [
+  [
+    "https://open.spotify.com/embed/playlist/6Y9zIXXDYmyVmX1j0UKJSR?utm_source=generator",
+    "https://open.spotify.com/embed/playlist/6tRU2zQeMP3RW2fKIyJgVm?utm_source=generator",
+  ]
+  ,
+  [
+    "https://open.spotify.com/embed/playlist/3NyCoSuHEW78lZaZh5EBdM?utm_source=generator",
+    "https://open.spotify.com/embed/playlist/4GddeUnys7W4kjrGN5Fl2F?utm_source=generator",
+  ],
+  [
+    "https://open.spotify.com/embed/playlist/2mZ6XbMoHGSpHlRymx98iS?utm_source=generator",
+    "https://open.spotify.com/embed/playlist/2cWwEO3v250A1ucT4Lve9E?utm_source=generator",
+  ]
+];
+
 export default function Home() {
   return (
-    <main className="min-h-screen w-full">
+    <main className="min-h-screen w-full relative">
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
@@ -140,10 +156,9 @@ export default function Home() {
           dducnv.dev
         </Link>
       </nav>
-      <section className="flex justify-center items-center py-32 border-b-2 border-b-black dark:border-b-white">
+      <section className="flex justify-center items-center pt-20 ">
         <div className="flex flex-col items-center">
-
-          <div className=" w-32 h-32 md:h-44 md:w-44 relative rounded-full overflow-hidden">
+          <div className="w-32 h-32 md:h-44 md:w-44 relative rounded-full overflow-hidden">
             <Image
               src="/avatar.jpg"
               className=" object-contain"
@@ -163,6 +178,23 @@ export default function Home() {
               ))
             }
           </div>
+
+        </div>
+      </section>
+      <section className="px-5 md:px-16 py-5 border-b-2 border-b-black dark:border-b-white pb-20 ">
+        <div
+          title="Code time"
+          className="mt-10 max-w-7xl  overflow-x-auto">
+          <figure
+            className="w-full m-auto flex justify-center dark:hidden"
+          >
+            <embed
+              src="https://wakatime.com/share/@dducnv/419251c3-3fd9-46c0-9830-63a8b435611b.svg" />
+          </figure>
+          <figure
+            className="w-full m-auto justify-center hidden dark:flex"
+          ><embed src="https://wakatime.com/share/@dducnv/91429af5-34d7-4673-9a2a-480f1cfcc591.svg" />
+          </figure>
         </div>
       </section>
       <section className="px-5 md:px-16 md:flex justify-between w-full items-center py-5 border-b-2 border-b-black dark:border-b-white ">
@@ -181,7 +213,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className=" md:flex ">
+      <section className=" md:flex">
         <div className="md:w-1/3">
           <Card>
             <Link
@@ -220,6 +252,29 @@ export default function Home() {
 
         </div>
       </section>
+      {/* <section className="">
+        {spotifyListLink.map((links, index) => (
+          <div className="md:flex border-b-2 border-b-black dark:border-b-white" key={index}>
+            {
+              links.map((item, index) => (
+                <div key={index}
+                className="md:w-1/2 border-r-2 border-b-black dark:border-b-white p-5"
+                >
+                  <iframe
+                    src={item}
+                    width="100%"
+                    height="375"
+                    className="border-none rounded-none"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="eager"
+                  />
+                </div>
+              ))
+            }
+          </div>
+        ))}
+
+      </section> */}
     </main>
   );
 }
