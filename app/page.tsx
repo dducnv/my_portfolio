@@ -9,7 +9,7 @@ import { SiCocos, SiDart, SiFlutter, SiKotlin, SiTypescript } from "react-icons/
 
 
 
-export const socialNetwork = [
+ const socialNetwork = [
   {
     id: 1,
     name: "Telegram",
@@ -75,7 +75,7 @@ export const socialNetwork = [
   },
 ];
 
-export const skills = [
+const skills = [
   {
     id: 1,
     name: "Dart",
