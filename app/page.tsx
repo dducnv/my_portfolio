@@ -1,4 +1,6 @@
+import { Card } from "@/components";
 import { CybersafeLogo, GDevLogo, MyToolsLogo, PicTrimLogo } from "@/components/icons";
+import Particles from "@/components/particles";
 import Image from "next/image";
 import Link from "next/link";
 import { DiDart } from "react-icons/di";
@@ -9,7 +11,7 @@ import { SiCocos, SiDart, SiFlutter, SiKotlin, SiTypescript } from "react-icons/
 
 
 
- const socialNetwork = [
+const socialNetwork = [
   {
     id: 1,
     name: "Telegram",
@@ -129,6 +131,10 @@ const skills = [
 export default function Home() {
   return (
     <main className="min-h-screen w-full">
+      <Particles
+        className="absolute inset-0 -z-10 animate-fade-in"
+        quantity={100}
+      />
       <nav className="flex px-5 md:px-16 py-5 border-b-2 border-b-black dark:border-b-white">
         <Link href={"/"} className="ibm-mono-font font-semibold">
           dducnv.dev
@@ -176,34 +182,42 @@ export default function Home() {
         </div>
       </section>
       <section className=" md:flex  border-b-2 border-b-black dark:border-b-white">
-        <div className="md:w-1/3 py-20 flex justify-center items-center">
-          <Link
-            target={"_blank"}
-            href={"https://mytools.dducnv.dev/"}
-          >
-            <MyToolsLogo
-              className=" w-24 h-24 md:w-48 md:h-48 fill-black dark:fill-white"
-            />
-          </Link>
+        <div className="md:w-1/3">
+          <Card>
+            <Link
+              className="flex justify-center items-center w-full h-full py-20"
+              target={"_blank"}
+              href={"https://mytools.dducnv.dev"}>
+              <MyToolsLogo
+                className=" w-24 h-24 md:w-48 md:h-48 fill-black dark:fill-white"
+              />
+            </Link>
+          </Card>
         </div>
-        <div className="md:w-1/3 py-20 flex justify-center items-center border-y-2 border-x-0 md:border-y-0 md:border-x-2 border-black dark:border-white ">
-          <Link
-            target={"_blank"}
-            href={"https://play.google.com/store/apps/details?id=com.duc_app_lab_ind.cyber_safe"}
-          >
-            <CybersafeLogo
-              className=" w-24 h-24 md:w-48 md:h-48 fill-black dark:fill-white"
-            />
-          </Link>
+        <div className="md:w-1/3  border-y-2 border-x-0 md:border-y-0 md:border-x-2 border-black dark:border-white ">
+          <Card>
+            <Link
+              className="flex justify-center items-center w-full h-full py-20"
+              target={"_blank"}
+              href={"https://play.google.com/store/apps/details?id=com.duc_app_lab_ind.cyber_safe"}>
+              <CybersafeLogo
+                className=" w-24 h-24 md:w-48 md:h-48 fill-black dark:fill-white"
+              />
+            </Link>
+          </Card>
         </div>
-        <div className="md:w-1/3 py-20 flex justify-center items-center">
-          <Link
-            target={"_blank"}
-            href={"https://play.google.com/store/apps/details?id=com.duc_app_lab_ind.pic_trim_app"}>
-            <PicTrimLogo
-              className=" w-24 h-24 md:w-48 md:h-48 fill-black dark:fill-white "
-            />
-          </Link>
+        <div className="md:w-1/3 ">
+          <Card>
+            <Link
+              className="flex justify-center items-center w-full h-full py-20"
+              target={"_blank"}
+              href={"https://play.google.com/store/apps/details?id=com.duc_app_lab_ind.pic_trim_app"}>
+              <PicTrimLogo
+                className=" w-24 h-24 md:w-48 md:h-48 fill-black dark:fill-white "
+              />
+            </Link>
+          </Card>
+
         </div>
       </section>
     </main>
