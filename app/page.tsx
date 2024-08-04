@@ -196,7 +196,7 @@ export default function Home() {
             />
           </div>
           <h1 className="text-3xl md:text-4xl mt-5 be-vietnam-pro font-bold">Duc Nguyen Van</h1>
-          <p className="text-sm md:text-lg mt-2 ibm-mono-font">Mobile App Developer</p>
+          <p className="text-sm md:text-lg mt-2 ibm-mono-font">Mobile App Developer | Game Developer</p>
           <div className="flex flex-wrap space-x-4  gap-3 md:gap-0  item-center mt-10 justify-center px-16">
             {
               skills?.map((item) => (
@@ -260,7 +260,7 @@ export default function Home() {
             <Link
               className="flex justify-center items-center w-full h-full py-20"
               target={"_blank"}
-              href={"https://play.google.com/store/apps/details?id=com.duc_app_lab_ind.cyber_safe"}>
+              href={"https://cybersafe.dducnv.dev"}>
               <CybersafeLogo
                 className=" w-24 h-24 md:w-48 md:h-48 fill-black dark:fill-white"
               />
