@@ -53,7 +53,7 @@ const page = () => {
                         is 100% secure.
                     </li>
                 </ul>
-                <h2 id="5-childrens-privacy">5. Children's Privacy</h2>
+                <h2 id="5-childrens-privacy">5. Children&apos;s Privacy</h2>
                 <ul>
                     <li>
                         Our application is not intended for children under the age of 13. We do
